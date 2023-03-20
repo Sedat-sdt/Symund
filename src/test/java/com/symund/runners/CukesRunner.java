@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
         },
         features="src/test/resources/features",
         glue="com/symund/step_definitions",
-        dryRun=true,
-        tags = "@empty",
+        dryRun=false,
+        tags = "@SYMU10-416",
         publish=true    //  add a report link  to console
 )
 public class CukesRunner {
