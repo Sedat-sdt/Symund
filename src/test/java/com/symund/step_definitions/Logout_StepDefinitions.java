@@ -22,12 +22,13 @@ public class Logout_StepDefinitions {
         symundLoginPage.usernameInputBox.sendKeys(ConfigurationReader.getProperty("username"));
         symundLoginPage.passwordInputBox.sendKeys(ConfigurationReader.getProperty("password"));
         symundLoginPage.loginBtn.click();
-
+        BrowserUtils.sleep(3);
     }
     @When("Click to usernameInitialLink")
     public void click_to_username_initial_link() {
 
         symundDashboardPage.usernameInitialLink.click();
+        BrowserUtils.sleep(3);
 
     }
 
@@ -42,7 +43,7 @@ public class Logout_StepDefinitions {
     public void user_can_log_out_and_should_be_on_login_page() {
 
         Assert.assertTrue(symundLoginPage.usernameInputBox.isDisplayed());
-
+        BrowserUtils.sleep(3);
     }
 
     @When("Back to the login page")
